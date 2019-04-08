@@ -1,4 +1,4 @@
-<% project_name = 'BikonApi' %>
+<% project_name = 'bikon_api' %>
 
 default: &default
   adapter: postgresql

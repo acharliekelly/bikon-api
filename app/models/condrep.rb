@@ -1,0 +1,2 @@
+class Condrep < ApplicationRecord
+end
