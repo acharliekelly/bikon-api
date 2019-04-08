@@ -1,1 +1,3 @@
-# bikon-api
+# BiKon API
+
+Biking Conditions application - Back-end
