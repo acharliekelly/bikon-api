@@ -1,13 +1,11 @@
-curl "http://localhost:4741/condreps" \
+curl "http://localhost:4741/condreps/${ID}" \
   --include \
-  --request POST \
+  --request PATCH \
   --header "Content-Type: application/json" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "condrep": {
-      condition: 1,
-      geolat: '${LAT}',
-      geolong: '${LONG}'
+      notes: "'"${NOTES}"'"
     }
   }'
 
