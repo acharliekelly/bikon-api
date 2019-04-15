@@ -1,11 +1,18 @@
-class CondrepsController < ApplicationController
-  before_action :set_condrep, only: [:show, :update, :destroy]
+# frozen_string_literal: true
+
+class CondrepsController < OpenReadController
+  before_action :set_condrep, only: %i[update destroy]
 
   # GET /condreps
   def index
     @condreps = Condrep.all
 
     render json: @condreps
+  end
+
+  # GET /my-condreps
+  def index_own
+    @condreps = current_user.condreps
   end
 
   # GET /condreps/1
@@ -15,7 +22,8 @@ class CondrepsController < ApplicationController
 
   # POST /condreps
   def create
-    @condrep = Condrep.new(condrep_params)
+    @condrep = current_user.condreps.build(condrep_params)
+    # @condrep = Condrep.new(condrep_params)
 
     if @condrep.save
       render json: @condrep, status: :created, location: @condrep
@@ -46,6 +54,7 @@ class CondrepsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def condrep_params
-      params.require(:condrep).permit(:condition, :geolat, :geolong)
+      params.require(:condrep).permit(:condition, :geolat, :geolong,
+        :reported_at, :notes, :user_id)
     end
 end
