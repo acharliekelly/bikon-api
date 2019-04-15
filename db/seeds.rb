@@ -9,3 +9,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+condreps = Condrep.create([
+  { condition: 1, geolat: 42.3530667, geolong: -71.0596961,
+    reported_at: Date.now(), user_id: 1 }
+])
