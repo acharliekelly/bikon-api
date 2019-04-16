@@ -1,0 +1,88 @@
+{
+  "condreps": [
+  {
+    "condition": 1,
+    "geolat": 42.3683005,
+    "geolong": -71.2218484,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 2,
+    "geolat": 42.3655023,
+    "geolong": -71.2153682,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 1,
+    "geolat": 42.3647969,
+    "geolong": -71.2148957,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 1,
+    "geolat": 42.3638449,
+    "geolong": -71.2098427,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 2,
+    "geolat": 42.3659849,
+    "geolong": -71.2056047,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 1,
+    "geolat": 42.3674429,
+    "geolong": -71.2011847,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 3,
+    "geolat": 42.3667059,
+    "geolong": -71.1991997,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 2,
+    "geolat": 42.3657549,
+    "geolong": -71.1942537,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 1,
+    "geolat": 42.3646529,
+    "geolong": -71.1941037,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 4,
+    "geolat": 42.3642578,
+    "geolong": -71.1879933,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 1,
+    "geolat": 42.3592149,
+    "geolong": -71.1604457,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  },
+  {
+    "condition": 1,
+    "geolat": 42.3643119,
+    "geolong": -71.1449747,
+    "reported_at": "2019-04-16T01:36:10.369Z",
+    "user_id": 3
+  }
+]
+}
