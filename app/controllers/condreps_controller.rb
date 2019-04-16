@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class CondrepsController < OpenReadController
-  before_action :set_condrep, only: %i[update destroy]
+  before_action :set_condrep, only: %i[show update destroy]
 
   # GET /condreps
   def index
@@ -11,8 +11,10 @@ class CondrepsController < OpenReadController
   end
 
   # GET /my-condreps
-  def index_own
+  def mine
     @condreps = current_user.condreps
+
+    render json: @condreps
   end
 
   # GET /condreps/1
@@ -55,6 +57,6 @@ class CondrepsController < OpenReadController
     # Only allow a trusted parameter "white list" through.
     def condrep_params
       params.require(:condrep).permit(:condition, :geolat, :geolong,
-        :reported_at, :notes, :user_id)
+                     :occurred, :notes)
     end
 end

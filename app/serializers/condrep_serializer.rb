@@ -1,5 +1,5 @@
 class CondrepSerializer < ActiveModel::Serializer
-  attributes :id, :condition, :geolat, :geolong, :reported_at,
+  attributes :id, :condition, :geolat, :geolong, :occurred,
              :notes, :user_id, :editable
 
   def editable
