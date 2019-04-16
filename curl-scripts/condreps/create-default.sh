@@ -5,9 +5,9 @@ curl "http://localhost:4741/condreps" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "condrep": {
-      condition: 1,
-      geolat: '${LAT}',
-      geolong: '${LONG}'
+      "condition": 1,
+      "geolat": "'"${LAT}"'",
+      "geolong": "'"${LONG}"'"
     }
   }'
 

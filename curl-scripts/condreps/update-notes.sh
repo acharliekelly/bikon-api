@@ -5,7 +5,7 @@ curl "http://localhost:4741/condreps/${ID}" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
     "condrep": {
-      notes: "'"${NOTES}"'"
+      "notes": "'"${NOTES}"'"
     }
   }'
 

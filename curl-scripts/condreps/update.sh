@@ -4,10 +4,10 @@ curl "http://localhost:4741/condreps/${ID}" \
   --header "Content-Type: application/json" \
   --data '{
     "condrep": {
-      condition: "'"${CONDITION}"'",
-      geolat: "'"${LATITUDE}"'",
-      geolong: "'"${LONGITUDE}"'",
-      reported_at: "'"${DATETIME}"'"
+      "condition": "'"${CONDITION}"'",
+      "geolat": "'"${LATITUDE}"'",
+      "geolong": "'"${LONGITUDE}"'",
+      "reported_at": "'"${DATETIME}"'"
     }
   }'
 
