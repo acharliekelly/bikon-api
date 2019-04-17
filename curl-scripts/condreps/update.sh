@@ -7,7 +7,7 @@ curl "http://localhost:4741/condreps/${ID}" \
       "condition": "'"${CONDITION}"'",
       "geolat": "'"${LATITUDE}"'",
       "geolong": "'"${LONGITUDE}"'",
-      "reported_at": "'"${DATETIME}"'"
+      "occurred": "'"${DATETIME}"'"
     }
   }'
 
