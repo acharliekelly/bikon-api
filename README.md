@@ -27,5 +27,23 @@ Biking Conditions Reporting App
 | PATCH  | `/condreps/:id`        | `condreps#update` |
 | DELETE | `/condreps/:id`        | `condreps#destroy`|
 
-// TODO
-### Set up and installation instructions for back end application
+
+## Set up and installation instructions
+
+1. Fork and clone this repo
+2. Make sure you have these tools available on your machine:
+  1. Ruby
+  2. Rails
+  3. PostgreSQL
+3. Install dependencies with `bundle install`
+4. Set up your environment variables:
+  1. Create a .env file in your project's root directory
+  2. Generate 2 secret keys by typing `bundle exec rails secret` (2x)
+  3. Paste them into your .env file as `SECRET_KEY_BASE_DEVELOPMENT` and `SECRET_KEY_BASE_TEST`
+5. Set up your database with these commands:
+  1. `bin/rails db:drop` (if database already exists)
+  2. `bin/rails db:create`
+  3. `bin/rails db:migrate`
+  4. `bin/rails db:seed`
+6. Start your server with `bin/rails server`
+7. Install the [front end](https://github.com/acharliekelly/bikon)
