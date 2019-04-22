@@ -10,10 +10,10 @@ class CondrepSerializer < ActiveModel::Serializer
   end
 
   def when
-    object.occurred.strftime('%m/%d/%Y at %I:%m %p')
+    object.created_at.strftime('%m/%d/%Y at %I:%m %p')
   end
 
   def secondsago
-    (Time.now - object.occurred).to_i
+    (Time.now - object.created_at).to_i
   end
 end
